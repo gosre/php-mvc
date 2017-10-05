@@ -1,2 +1,2 @@
 # php-mvc
-A model view controller for PHP.
+A model view controller for PHP. Does not completely adhere to mvc standards and includes some personal customizations.
