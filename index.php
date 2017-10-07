@@ -1,15 +1,19 @@
+<?php
+/**
+ * php-mvc
+ * @author Clayton Williams
+ */
 
+/** The absolute path to the project */
+define('ROOT', __DIR__.DIRECTORY_SEPARATOR);
+/** Define a path to the core (application) folder after the root */
+define('CORE', ROOT.'core'.DIRECTORY_SEPARATOR);
 
-<div id="wrapper">
+/** Framework configs (sql, directories, debug) */
+require ROOT."configuration.php";
 
-</div>
+/** Main application */
+require CORE."Application.php";
 
-
-</html>
-
-<script src="/public/scripts/jquery/jquery-3.2.1.min.js"></script>
-<script src="/public/scripts/bootstrap/bootstrap.min.js"></script><!-- Bootstrap after jQuery -->
-<script>
-
-
-</script>
+/** Start application */
+$application = new core\Application();
