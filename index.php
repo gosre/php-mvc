@@ -15,5 +15,8 @@ require ROOT."configuration.php";
 /** Main application */
 require CORE."Application.php";
 
+/** namespace */
+use core\Application;
+
 /** Start application */
-$application = new core\Application();
+$application = new Application();
