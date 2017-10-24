@@ -23,7 +23,7 @@ class Application {
 
         if (isset($this->controller)) {
             //TODO check for valid controller
-                //TODO check for action
+                //TODO check for action and distribute
         } else {
             //TODO do index
         }
